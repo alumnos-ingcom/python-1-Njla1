@@ -20,10 +20,10 @@ def compara(numero, otro_numero):
         0 Si ambos numeros son iguales
        -1 Si el primer numero es menor al segundo
     """
-    aux = numero - otro_numero
-    if aux > 0:
+    diferencia = numero - otro_numero
+    if diferencia > 0:
         return 1
-    elif aux < 0:
+    elif diferencia < 0:
         return -1
     else:
         return 0
