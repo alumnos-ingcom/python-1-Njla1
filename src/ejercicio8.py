@@ -20,7 +20,7 @@ def es_primo(numero):
     elif numero % 2 == 0:
         return False
     divisor = 3
-    while n < (numero/2):
+    while divisor < (numero/2):
         if numero % divisor == 0:
             return False
         divisor = divisor + 2
