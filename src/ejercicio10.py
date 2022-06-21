@@ -15,9 +15,9 @@ def es_palindromo(texto):
                True : si es palindromo
                False: no es palindromo
     """
-    L = len(texto)
+    largo = len(texto)
     i = 0
-    while i <= L/2:
+    while i <= largo/2:
         if texto[i] != texto[-1-i]:
              return False
         i = i + 1
@@ -28,12 +28,13 @@ def principal():  # pragma: no cover
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
+    print("Este programa indica si la palabra ingresada es un palindromo o no.")
     texto = input("Ingrese una palabra: ")
-    palin = es_palindromo(texto)
-    if palin:
-        print("palindromo")
+    palindromo = es_palindromo(texto)
+    if palindromo:
+        print(f"La palabra '{texto}' es un palindromo")
     else:
-        print("NO")
+        print(f"La palabra '{texto}' no es un palindromo")
     pass
 
 
