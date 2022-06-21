@@ -19,11 +19,11 @@ def es_primo(numero):
         return True
     elif numero % 2 == 0:
         return False
-    n = 3
+    divisor = 3
     while n < (numero/2):
-        if numero % n == 0:
+        if numero % divisor == 0:
             return False
-        n = n + 2
+        divisor = divisor + 2
     return True
     
 
