@@ -9,7 +9,7 @@ Escribir una función que haga la suma entre dos números enteros sin hacer la o
 
 La funcion debe ser capaz de sumar cualquier numero entero positivo y negativo.
 """
-#if - while - return
+#if - else - while - return
 
 def suma_lenta(numero, otro_numero):
     """
