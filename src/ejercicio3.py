@@ -15,9 +15,10 @@ Retornar 1 si el primero es mayor que el segundo
 def compara(numero, otro_numero):
     """
     Devuelve un numero entero en relacion a la relacion de dos numeros:
-         1 Si el primer numero es mayor al segundo
-         0 Si ambos numeros son iguales
-        -1 Si el primer numero es menor al segundo
+    Retorna:
+        1 Si el primer numero es mayor al segundo
+        0 Si ambos numeros son iguales
+       -1 Si el primer numero es menor al segundo
     """
     aux = numero - otro_numero
     if aux > 0:
@@ -32,6 +33,7 @@ def principal():  # pragma: no cover
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
+    print("Este programa compara el valor dos numeros.")
     num1 = int(input("Ingrese el primer numero: "))
     num2 = int(input("Ingrese el segundo numero: "))
     compara = compara(num1,num2)
