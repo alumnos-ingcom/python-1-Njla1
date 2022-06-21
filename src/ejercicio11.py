@@ -7,7 +7,7 @@
 11. Multiplos de
 Escribir una función que indique con True si un número entero es multiplo de otro, utilizando sumas y restas.
 """
-# Reemplazar por las funciones del ejercicio
+# if - else - while - 
 
 def es_multiplo(numero, multiplo):
     """Determina si un numero es multiplo de otro por medio de sumas.
