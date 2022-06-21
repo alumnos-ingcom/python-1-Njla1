@@ -9,7 +9,7 @@ Escribir un programa que permita transformar un número solicitado expresado en 
 
 Recuerden que un grado son 60 minutos y un minuto son 60 segundos.
 """
-# def - if - elif - else - return - abs
+# def - if - elif - else - abs - return
 def signo(numero):
     """
     Devuelve un numero entero en relacion al signo del numero:
