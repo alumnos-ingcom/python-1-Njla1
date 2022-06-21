@@ -19,29 +19,30 @@ def es_primo(numero):
         return True
     elif numero % 2 == 0:
         return False
-    n = 3
-    while n < (numero/2):
-        if numero % n == 0:
+    divisor = 3
+    while divisor < (numero/2):
+        if numero % divisor == 0:
             return False
-        n = n + 2
+        divisor = divisor + 2
     return True
 
 def factores_primos(numero):
     """
-    Devuelve los factores primos de un numero entero positivo 
+    Devuelve una tupla con los factores primos de un numero entero positivo.
+    Retorna (0) en caso de que el numero ingresado sea primo.
     """
     factores = ()
-    div = 2
+    divisor = 2
     if es_primo(numero):
-        factores + (numero,)
+        factores = factores + (0,)
     else:
         while numero > 1:
-            if es_primo(div):
-                if numero % div == 0:
-                    factores = factores + (div,)
-                    numero = numero/div
+            if es_primo(divisor):
+                if numero % divisor == 0:
+                    factores = factores + (divisor,)
+                    numero = numero/divisor
                 else:
-                    div = div + 1
+                    divisor = divisor + 1
     return factores
             
     
@@ -52,11 +53,9 @@ def principal():  # pragma: no cover
     """
     numero = int(input("Ingrese un numero entero positivo:"))
     factores = factores_primos(numero)
-    if factores[0] == -1:
-        print("{numero} es primo")
-    else:
-        for n in factores:
-            print(f"{n}")
+    print(f"Los factores primos de {numero} son: ")
+    for n in factores:
+        print(f"{n}")
     pass
 
 
