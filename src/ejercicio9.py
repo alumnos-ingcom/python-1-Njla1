@@ -7,7 +7,7 @@
 9. Factores Primos
 Escribir una función que retorne una tuple con factores primos de un numero entero positivo.
 """
-# Reemplazar por las funciones del ejercicio
+# if - elif - else - while - return
 
 def es_primo(numero):
     """Determina si un numero es primo o no.
